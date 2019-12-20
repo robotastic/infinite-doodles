@@ -1,0 +1,17 @@
+{
+  "name": "infinite-doodles",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Luke Berndt",
+  "license": "ISC",
+  "dependencies": {
+    "@beardicus/line-us": "2.1.0",
+    "argparse": "1.0.10",
+    "paper-jsdom": "0.12.4",
+    "sketchrnn": "0.1.1"
+  }
+}
