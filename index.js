@@ -2,33 +2,11 @@
 const http = require('https');
 const paper = require("paper-jsdom"); // paper
 const fs = require('fs'); //file system
-const ArgumentParser = require("argparse").ArgumentParser;
 const sketch = require("sketchrnn"); // sketch-rnn
 const LineUs = require('@beardicus/line-us')
 
-//setup the command line argument parser
-let parser = new ArgumentParser({
-    addHelp: true,
-    description: 'SketchRNN Node & Paper Example'
-});
-
-parser.addArgument(
-    ['-m', '--model'], {
-        help: 'The SketchRNN model to use',
-        required: false,
-        defaultValue: "https://storage.googleapis.com/quickdraw-models/sketchRNN/large_models/bus.gen.json"
-    }
-);
 
 
-parser.addArgument(
-    ['-o', '--output'], {
-        help: 'The path to save the resulting output svg file',
-        required: false
-    }
-);
-
-const args = parser.parseArgs();
 //"https://storage.googleapis.com/quickdraw-models/sketchRNN/large_models/bus.gen.json"
    
 // initialize paper
